@@ -31,9 +31,42 @@ a {
     color: #FD5948;
     font-weight: 900;
   }
+  #row-type{
+    display: block;
+  }
+    
   .display-block{
     display: block;
   }
+.back-four{
+   display: flex; 
+}
+    .backgrounds{
+        background-color:#B6FFC0!important ;
+        width: 60%;
+        padding: 60px;
+        margin: 20px;
+        
+    }
+        .backgrounds img{
+            display: block;
+            padding: 10px;
+        }
+    .fourty{
+        display: flex;
+        width: 50%
+    }
+        .fourty img{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            top: 10%;    
+            left: -16%;
+        }
+    .sound{
+        width: 1200px;
+        height: auto;
+    }
   .colors{
     background-color: #FBFFA7!important;
     top: 0;
@@ -43,6 +76,8 @@ a {
     position: absolute;
     right: 0px;
     }
+    
+
     #photo-1 {
         width: 100px;
         height: 100px;
@@ -65,10 +100,53 @@ a {
         justify-content: space-evenly;
     }
 
-iframe {
+#box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #box3 img {
+        width: auto;
+        height: 400px;
+        margin: 20px;
+        justify-content: space-evenly;
+    }
+#box4 {
+    display: flex;
+    
+    
+    }
+    #box4 .colors {
+        justify-content: space-around;
+        background-color:#D5B3FF!important ;
+        width: 60%;
+        padding: 60px;
+        margin: 20px
+    }
+    #box4 img #computer{
+        width: 300px;
+        height: 3px;
+        position: relative;
+    }
+    #box4 img #board{
+        width: 400px;
+        height: 400px;
+    }
+    .colors #violet{
+        justify-content: space-around;
+        background-color:#D5B3FF!important ;
+        width: 60%;
+        padding: 60px;
+        margin: 20px;
+        }
+        
+.iframe-container iframe {
     display: flex;
     align-items: center;
-}
+    justify-content: center;
+    flex: content;
+    }
+
 .text {
     display: flex;
     flex-direction: column;
@@ -165,6 +243,14 @@ iframe {
 }
 .secondary ul li {
     margin-right: 20px;
+}
+#block{
+    position: absolute;
+    right: 0;
+    top: -25%;
+}
+#letter1{
+    display: block;
 }
 
 /* Media Queries 
