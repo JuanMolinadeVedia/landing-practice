@@ -12,6 +12,10 @@ body {
     Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+main {
+  max-width: 100em;
+}
+
 @media screen and (min-width: 1500px) {
   main {
     max-width: 75rem;
