@@ -1,221 +1,415 @@
-
-a, p, h1, h2, h3, h4, h5{
-    text-decoration: none;
-    color: black;
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
-body{
-    margin:0;
-    padding: 0;
-    background-color: rgb(242, 242, 242);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+main {
+  max-width: 100em;
 }
 
-main{
-    background-color: rgb(255, 255, 255);
-    max-width: 100rem;
-    padding: 0 auto;
-    margin: 0 auto;
-    width: 100%;
+@media screen and (min-width: 1500px) {
+  main {
+    max-width: 75rem;
+  }
 }
 
-
-
-.navbar{
-    padding: 20px 0px 0px 0px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.25rem;
+/* FOOTER */
+/* FOOTER */
+.second-footer-row {
+  display: inline-block;
 }
 
-
-
-.nav-logo{
-    display: inline-block;
-    padding-right: 35px;
-    padding-left: 2.5rem;
+.main-footer_separator {
+  height: 1.3px;
+  width: 75em;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
 }
-.nav-logo svg{
-    display: block;
-    width: 3.75em;
-    height: 1.75em;
+
+.footer-container {
+  padding-top: 8.33333vw;
+  padding-left: 8.3333vw;
+  padding-right: 8.3333vw;
+}
+
+.footer-container li {
+  font-size: 0.8em;
+}
+
+.header-footer-title {
+  margin-bottom: 3rem;
+  height: 3em;
+}
+
+.header-footer-title img {
+  height: 3em;
+}
+
+.firts-footer-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  list-style: none;
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding-bottom: 2em;
+}
+
+.footer-singup {
+  display: inline-block;
+  width: 40%;
+  font-size: 1em;
+}
+
+#email {
+  width: 74%;
+  height: 35px;
+  background-color: rgb(243, 243, 243);
+  color: transparent;
+  border-style: hidden;
+  color: white;
+  padding: 0;
+  margin: 0;
+  background-color: lightgray;
+}
+#submit {
+  width: 24%;
+  height: 35px;
+  background-color: blue;
+  padding: 0;
+  margin: 0;
+  border-style: hidden;
+  color: white;
+}
+
+.footer-education {
+  display: inline-block;
+  margin-right: 10px;
+  width: 30%;
+}
+
+.footer-education ul {
+  padding: 0;
+}
+
+.footer-education ul li {
+  list-style: none;
+}
+
+.footer-education ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-socialmedia {
+  display: inline-block;
+  margin-right: 10px;
+  width: 30%;
+}
+
+.footer-socialmedia ul {
+  padding: 0;
+}
+
+.footer-socialmedia ul li {
+  list-style: none;
+}
+
+.footer-socialmedia ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.media-icons li {
+  display: inline-block;
+}
+
+.second-footer-row {
+  display: flex;
+  list-style: none;
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer-community {
+  width: 30%;
+  display: inline-block;
+  padding: 0px 10px 20px 0px;
+}
+
+.footer-community ul {
+  padding: 0;
+}
+
+.footer-community ul li {
+  list-style: none;
+}
+
+.footer-community ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-language {
+  display: inline-block;
+}
+
+select {
+  line-height: 40px;
+}
+
+.selectors {
+  display: flex;
+}
+
+.language-selector {
+  display: inline-block;
+  height: 45px;
+  width: 70%;
+}
+
+.country-selector {
+  display: inline-block;
+  height: 30px;
+  width: 30%;
+}
+
+.three-footer-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20vh;
+  list-style: none;
+  text-decoration: none;
+  font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+.footer-extras {
+  display: inline-block;
+}
+
+.footer-extras li {
+  padding: 30px;
+}
+
+.footer-extras a {
+  font-weight: 600;
+  font-size: 0.6em;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-logo {
+  display: inline-block;
+}
+
+h4 {
+  font-size: small;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  max-width: 100em;
+  width: 100%;
+}
+
+.nav-logo {
+  display: inline-block;
+  padding-right: 35px;
+  padding-left: 2.5rem;
+}
+.nav-logo svg {
+  display: block;
+  width: 3.75em;
+  height: 1.75em;
 }
 
 /* MediaQuery cambiar padding del loco en tables y mobil */
 
-.nav-items{
-    display: inline;
-    font-size: 20px;
+.nav-items {
+  display: inline;
+  font-size: 20px;
 }
 
-
-.left-navmenu{
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin: 0px;
-    padding: 0px;
-    top: 0px;
+.left-navmenu {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
 }
 
-.left-navmenu ul{
-    transform: scaleY(3);
-    display: inline;
-    padding: 0;
-    margin: 0;
+.left-navmenu ul {
+  transform: scaleY(3);
+  display: inline;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-menu-item{
-    font-size: 1.25rem;
-    font-weight: 900;
-    display: inline-block;
-    font-weight: 500;
-    margin-right: 0.625rem;
-    margin-left: 0.625rem;
+.nav-menu-item {
+  font-size: 1.25rem;
+  font-weight: 900;
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
 }
 
-.sapan{
-    color: brown;
+.sapan {
+  color: brown;
 }
 
-
-.right-navmenu{
-    padding-right: 35px;
-    font-size: 20px;
-    transform: scaleY(1.2);
-    transform: scaleX(1);
-    display: inline-block;
-    font-weight: 500;
+.right-navmenu {
+  padding-right: 35px;
+  font-size: 20px;
+  transform: scaleY(1.2);
+  transform: scaleX(1);
+  display: inline-block;
+  font-weight: 500;
 }
 
-
-.right-navmenu ul{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    text-align: center;
-    text-decoration: none;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
+.right-navmenu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.right-nav-manu-item{
-    display: inline-block;
-    padding-left: 35px;
+.right-nav-manu-item {
+  display: inline-block;
+  padding-left: 35px;
 }
 
-
-.dropdown-menu{
-    text-decoration: none;
-    padding-top: 1.6875rem;
-    padding-bottom: 3.4375rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+.dropdown-menu {
+  text-decoration: none;
+  padding-top: 1.6875rem;
+  padding-bottom: 3.4375rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
-.dropdown-menu ul{
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    display: inline;
-    text-decoration: none;
+.dropdown-menu ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: inline;
+  text-decoration: none;
 }
 
-.dropdown-menu ul li{
-    display: inline;
-    text-decoration: none;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem;
-    margin-right: 0.625rem;
-    margin-left: 0.625rem;
+.dropdown-menu ul li {
+  display: inline;
+  text-decoration: none;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
 }
 
-
-.more-on-ableton{
-    margin-bottom: 30px;
+.more-on-ableton {
+  margin-bottom: 30px;
 }
 
-.more-on-ableton h4{
-    font-size: 1.750em;
-    padding-bottom: 0.3em;
-    margin: 0px;
-    font-weight: 500;
+.more-on-ableton h4 {
+  font-size: 1.75em;
+  padding-bottom: 0.3em;
+  margin: 0px;
+  font-weight: 500;
 }
 
-.more-on-ableton ul li:first-child{
-    padding-left: 0px;
-    margin-left: 0px;
+.more-on-ableton ul li:first-child {
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
-#moreButton{
-    border: none;
-    font-size: 20px;
+#moreButton {
+  border: none;
+  font-size: 20px;
 }
 
-#dropdownid{
-    display: none;
+#dropdownid {
+  display: none;
 }
 
-.more-from-ableton{
-    font-size: 1em;
-    padding-top: 2.625rem;
+.more-from-ableton {
+  font-size: 1em;
+  padding-top: 2.625rem;
 }
 
-.more-from-ableton h4{
-    font-size: 1.750em;
-    padding-bottom: 0.3em;
-    margin: 0px;
-    font-weight: 500;
+.more-from-ableton h4 {
+  font-size: 1.75em;
+  padding-bottom: 0.3em;
+  margin: 0px;
+  font-weight: 500;
 }
 
-.more-from-ableton ul{
-    display: flex;
-    position: relative;
-    padding: 0px;
-    margin: 0px;
+.more-from-ableton ul {
+  display: flex;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
 }
 
-.more-from-ableton ul li{
-    display: inline-block;
-    width: 25%;
+.more-from-ableton ul li {
+  display: inline-block;
+  width: 25%;
 }
 
-.more-from-ableton ul li:first-child{
-    padding-left: 0px;
-    margin-left: 0px;
+.more-from-ableton ul li:first-child {
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
-.more-from-ableton ul li a h4{
-    font-weight: 500;
-    font-size: 1.25rem;
+.more-from-ableton ul li a h4 {
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
-
-
-.more-from-ableton p{
-    margin: 0px;
+.more-from-ableton p {
+  margin: 0px;
 }
 
-
-.nav-separator{
-    width: 100%;
-    height: 1px;
-    background-color: rgb(179, 179, 179);
+.nav-separator {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(179, 179, 179);
 }
 
- 
+.secondary-nav {
+  width: 100%;
+}
 
-.secondary-nav ul li{
-    display: inline-block;
-    margin-right: 1.25em;
-    font-weight: 600;
-    font-size: 0.9em;
+.secondary-nav ul li {
+  display: inline-block;
+  margin-right: 1.25em;
+  font-weight: 600;
+  font-size: 0.9em;
 }
