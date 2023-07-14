@@ -4,95 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FrontEnd Practice</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-        <nav class="primary">
-            <div style="display:inline; position: relative;">
-                <svg role="img" aria-labelledby="logo" class="main-nav__logo__image" xmlns="http://www.w3.org/2000/svg" width="45" height="21" viewBox="0 0 45 21">
-                    <title id="logo">Ableton Homepage</title>
-                    <path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24
-                    18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path>
-                </svg>
-            </div>
-            <div>
-                <ul style="display: flex; list-style: none;">
-                    <li><a href=""></a>Live</li>
-                    <li><a href=""></a>Push</li>
-                    <li><a href=""></a>Note</li>
-                    <li><a href=""></a>Link</li>
-                    <li><a href=""></a>Shop</li>
-                    <li><a href=""></a>Packs</li>
-                    <li><a href=""></a>Help</li>
-                    <li><a href=""></a><span style="color: rgb(29, 32, 221);">More</span></li>
-                </ul>
-                <div>
-                    <section>
-                        <h4>More on Ableton.com:</h4>
-                        <ul>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Ablton for the Classrom</a></li>
-                            <li><a href="">Ableton for Challeges and Universities</a></li>
-                            <li><a href="">Certified Training</a></li>
-                            <li><a href=""></a><span>About Ableton</span></a></li>
-                            <li><a href="">Jobs</a></li>
-                            <li><a href="">Apprenticeships</a></li>
-                        </ul>
-                    </section>
-                    <section style="display: inline-block;">
-                        <h4>More from Ableton:</h4>
-                        
-                        <div>
-                            <ul style="display: flex; padding: 0px;">
-                                <li style="display: inline-block; width: 25%;">
-                                    <a href="">
-                                        <h4>Loop</h4>
-                                        <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
-                                    </a>
-                                </li>
-                                <li style="display: inline-block; width: 25%;" >
-                                    <a href="">
-                                        <h4>Learning Music</h4>
-                                        <p>Learn the fundamentals of music making right in your browser.</p>
-                                    </a>
-                                </li>
-                                <li style="display: inline-block; width: 25%;">
-                                    <a href="">
-                                        <h4>Learning Synths</h4>
-                                        <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
-                                    </a>
-                                </li>
-                                <li style="display: inline-block; width: 25%;">
-                                    <a href="">
-                                        <h4>Making Music</h4>
-                                        <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div>
-                <span><a href=""></a></span>
-                <a href=""></a>
-            </div>
-        </nav>
-
-        <div class="separator"></div>
-        <nav class="secondary">
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Jobs</a></li>
-                <li><a href="">Apprenticeships</a></li>
-            </ul>
-        </nav>
-
-    </header>  
-
     <main>
-      <section>
+      <nav class="navbar">
+        <div class="left-navmenu">
+          <div class="nav-logo">
+            <svg
+              role="img"
+              aria-labelledby="logo"
+              class="main-nav__logo__image"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 45 21"
+            >
+              <title id="logo">Ableton Homepage</title>
+              <path
+                d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24
+                      18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="nav-items">
+            <ul>
+              <li class="nav-menu-item">
+                <a href="" style="margin-left: 0px; padding-left: 0px"></a>Live
+              </li>
+              <li class="nav-menu-item"><a href=""></a>Push</li>
+              <li class="nav-menu-item"><a href=""></a>Note</li>
+              <li class="nav-menu-item"><a href=""></a>Link</li>
+              <li class="nav-menu-item"><a href=""></a>Shop</li>
+              <li class="nav-menu-item"><a href=""></a>Packs</li>
+              <li class="nav-menu-item"><a href=""></a>Help</li>
+              <li  class="nav-menu-item" onmouseover="this.style.cursor='pointer'" onselectstart="return false" onmousedown="return false" id="moreButton" onclick="toggleDropdown()">More</li>  
+            </ul>            
+          </div>
+        </div>
+
+        <div class="right-navmenu">
+          <ul>
+            <li class="right-nav-manu-item">
+              <a href=""><span>Try Live for free</span></a>
+            </li>
+            <li class="right-nav-manu-item" style="font-size: 16px">
+              <a href=""></a>Log in or register
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="dropdownid"class="dropdown-menu">
+        <section class="more-on-ableton">
+          <h4>More on Ableton.com:</h4>
+          <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Ablton for the Classrom</a></li>
+            <li><a href="">Ableton for Challeges and Universities</a></li>
+            <li><a href="">Certified Training</a></li>
+            <li>
+              <a href=""><span>About Ableton</span></a>
+            </li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Apprenticeships</a></li>
+          </ul>
+        </section>
+
+        <section class="more-from-ableton">
+          <h4>More from Ableton:</h4>
+          <ul>
+            <li>
+              <a href="">
+                <h4>Loop</h4>
+                <p>
+                  Watch Talks, Performances and Features from Ableton's Summit
+                  for Music Makers
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <h4>Learning Music</h4>
+                <p>
+                  Learn the fundamentals of music making right in your browser.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <h4>Learning Synths</h4>
+                <p>
+                  Get started with synthesis using a web-based synth and
+                  accompanying lessons.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <h4>Making Music</h4>
+                <p>
+                  Some tips from 74 Creative Strategies for Electronic
+                  Producers.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="nav-separator"></div>
+      <nav class="secondary-nav">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Apprenticeships</a></li>
+        </ul>
+      </nav>
+
+       
+      <!-- <section>
         <div>
           <img
             src="https://ableton-production.imgix.net/about/header.jpg?fit=crop&auto=format&fm=jpg"
@@ -101,8 +132,6 @@
           />
           <svg
             class="page-about__header__ableton-logo"
-            with="430px"
-            height="104px"
             viewBox="0 0 430 104"
           >
             <title>Ableton</title>
@@ -133,14 +162,10 @@
         <img
           src="https://ableton-production.imgix.net/about/photo-1.jpg"
           alt=""
-          height="200px"
-          style="display: block"
         />
         <img
           src="https://ableton-production.imgix.net/about/photo-2.jpg?fit=crop"
           alt=""
-          height="200px"
-          style="display: block"
         />
         <h3>
           Making music isn’t easy. It takes time, effort, and learning. But when
@@ -155,8 +180,6 @@
 
       <section>
         <iframe
-          width="560"
-          height="315"
           src="https://www.youtube.com/embed/9SbnhgjeyXA"
           title="YouTube video player"
           frameborder="0"
@@ -191,20 +214,14 @@
         <img
           src="https://ableton-production.imgix.net/about/photo-3.jpg?fit=crop"
           alt=""
-          height="200px"
-          style="display: block"
         />
         <img
           src="https://ableton-production.imgix.net/about/photo-5.jpg?fit=crop"
           alt=""
-          height="200px"
-          style="display: block"
         />
         <img
           src="https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop"
           alt=""
-          height="200px"
-          style="display: block"
         />
 
         <h3>
@@ -225,7 +242,7 @@
         <img
           src="https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?fit=crop&auto=format&fm=jpg"
           alt=""
-          height="200px"
+
         />
         <h1>
           We’re passionate about what we do, but we’re equally passionate about
@@ -249,12 +266,12 @@
         <img
           src="https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop"
           alt=""
-          height="200px"
+
         />
         <img
           src="https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop"
           alt=""
-          height="200px"
+
         />
 
         <h1>
@@ -279,7 +296,6 @@
             <img
               src="https://ableton-production.imgix.net/about/photo-8.jpg?fit=crop&crop=right"
               alt=""
-              height="200px"
             />
           </div>
           <div>
@@ -294,13 +310,6 @@
           </div>
         </div>
       </section>
-    </main>
-  </body>
-</html>
-
-
-
-
 
   <footer>
     <div>
@@ -435,8 +444,20 @@
         <img src="imgs/ableton-hallmark.ef5355379032.svg" alt="Ableton Logo">
         <span>Made in Berlin</span>
     </div>
-   </footer>
-</body>
- </html>
- 
+   </footer> -->
+
+    </main>
+
+    <script>
+      function toggleDropdown() {
+        var dropdown = document.getElementById('dropdownid');
+        if (dropdown.style.display === 'none') {
+          dropdown.style.display = 'block';
+        } else {
+          dropdown.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>
 
